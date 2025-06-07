@@ -6,25 +6,59 @@
     <!-- SEO Meta Tags -->
     <title>Jaden Van Der Zwaan - Resume | Thousand Oaks, CA</title>
     <meta name="description" content="Professional resume of Jaden Van Der Zwaan, a dedicated job seeker with experience in customer service, lifeguarding, and team collaboration in Thousand Oaks, CA.">
-    <meta name="keywords" content="Jaden Van Der Zwaan, resume, Thousand Oaks, CA, customer service, lifeguard, job seeker, professional experience">
+    <meta name="keywords" content="Jaden Van Der Zwaan, resume, Thousand Oaks, CA, customer service, lifeguard, team collaboration, job seeker, front desk, sports monitor, CPR certified, entry-level jobs">
     <meta name="author" content="Jaden Van Der Zwaan">
     <!-- Open Graph for Social Media -->
     <meta property="og:title" content="Jaden Van Der Zwaan - Resume">
     <meta property="og:description" content="View the professional resume of Jaden Van Der Zwaan, showcasing skills and experience in Thousand Oaks, CA.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jadenvanderzwaan.com/resume.html"> <!-- Replace with your URL -->
-    <!-- Favicon (optional, create a 16x16 icon and link it) -->
+    <meta property="og:url" content="https://jaden-vanderzwaan.com">
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Sitemap Reference -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jaden Van Der Zwaan",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "151 Odebolt Drive",
+            "addressLocality": "Thousand Oaks",
+            "addressRegion": "CA",
+            "postalCode": "91360",
+            "addressCountry": "US"
+        },
+        "telephone": "(805) 405-6324",
+        "email": "jadenvdz@icloud.com",
+        "jobTitle": "Job Seeker",
+        "description": "Dedicated professional with experience in customer service, lifeguarding, and team collaboration.",
+        "url": "https://jaden-vanderzwaan.com"
+    }
+    </script>
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TYJ6TXLN3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2TYJ6TXLN3');
+    </script>
 </head>
 <body>
     <!-- Header with Contact Info -->
     <header>
         <h1>Jaden Van Der Zwaan</h1>
-        <p>Thousand Oaks | <a href="mailto:jadenvdz@icloud.com">jadenvdz@icloud.com</a></p>
+        <div class="contact-info">
+            <p>151 Odebolt Drive | Thousand Oaks, CA 91360</p>
+            <p>(805) 405-6324 | <a href="mailto:jadenvdz@icloud.com">jadenvdz@icloud.com</a></p>
+        </div>
     </header>
 
     <!-- Navigation -->
@@ -40,7 +74,7 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="container">
+    <main class="container">
         <!-- Objective -->
         <section id="objective">
             <h2>Objective</h2>
@@ -51,19 +85,21 @@
         <section id="experience">
             <h2>Professional Experience</h2>
             <div class="job">
+                <h3>Recreation Leader</h3>
+                <p>Conejo Recreation and Park District – Thousand Oaks, CA | October 2021 – Present</p>
+                <ul>
+                    <li>Coordinate setup and teardown for sports events, including basketball, softball, and soccer, ensuring smooth operations.</li>
+                    <li>Support event logistics and assist participants, demonstrating reliability and teamwork in fast-paced settings.</li>
+					<li>Prepare facilities at the Senior Center for programming and special events.</li>
+					<li>Greet visitors, direct participants, and respond to general inquiries with a focus on senior needs.</li>
+                </ul>
+            </div>
+            <div class="job">
                 <h3>Front Desk Staff</h3>
                 <p>Bas Rutten’s Elite MMA – Thousand Oaks, CA | May 2022 – Present</p>
                 <ul>
                     <li>Manage front desk operations, including processing memberships and providing exceptional customer service to gym patrons.</li>
                     <li>Maintain a clean and organized facility, ensuring a welcoming environment for clients and staff.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Sports Monitor</h3>
-                <p>Conejo Recreation and Park District – Thousand Oaks, CA | October 2021 – Present</p>
-                <ul>
-                    <li>Coordinate setup and teardown for sports events, including basketball, softball, and soccer, ensuring smooth operations.</li>
-                    <li>Support event logistics and assist participants, demonstrating reliability and teamwork in fast-paced settings.</li>
                 </ul>
             </div>
             <div class="job">
@@ -135,11 +171,11 @@
                 <li><strong>English:</strong> Fluent</li>
             </ul>
         </section>
-    </div>
+    </main>
 
-    <!-- Footer -->
+    <!-- Footer with PDF Link -->
     <footer>
-        <p>References available upon request | Last Updated: June 07, 2025</p>
+        <p>References available upon request | Last Updated: June 2025 | <a href="/resume.pdf" target="_blank">Download PDF</a></p>
     </footer>
 </body>
 </html>
