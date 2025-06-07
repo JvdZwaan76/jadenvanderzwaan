@@ -3,178 +3,500 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
     <title>Jaden Van Der Zwaan - Resume | Thousand Oaks, CA</title>
     <meta name="description" content="Professional resume of Jaden Van Der Zwaan, a dedicated job seeker with experience in customer service, lifeguarding, and team collaboration in Thousand Oaks, CA.">
-    <meta name="keywords" content="Jaden Van Der Zwaan, resume, Thousand Oaks, CA, customer service, lifeguard, team collaboration, job seeker, front desk, sports monitor, CPR certified, entry-level jobs">
-    <meta name="author" content="Jaden Van Der Zwaan">
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="Jaden Van Der Zwaan - Resume">
-    <meta property="og:description" content="View the professional resume of Jaden Van Der Zwaan, showcasing skills and experience in Thousand Oaks, CA.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jaden-vanderzwaan.com">
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- External Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Sitemap Reference -->
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Jaden Van Der Zwaan",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "not provided",
-            "addressLocality": "Thousand Oaks",
-            "addressRegion": "CA",
-            "postalCode": "91360",
-            "addressCountry": "US"
-        },
-        "telephone": "not provided",
-        "email": "jadenvdz@icloud.com",
-        "jobTitle": "Job Seeker",
-        "description": "Dedicated professional with experience in customer service, lifeguarding, and team collaboration.",
-        "url": "https://jaden-vanderzwaan.com"
-    }
-    </script>
-    <!-- Google Tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TYJ6TXLN3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-2TYJ6TXLN3');
-    </script>
 </head>
 <body>
-    <!-- Header with Contact Info -->
-    <header>
-        <h1>Jaden Van Der Zwaan</h1>
-        <div class="contact-info">
-            <p>Thousand Oaks | <a href="mailto:jadenvdz@icloud.com">jadenvdz@icloud.com</a></p>
-        </div>
-    </header>
+    <!-- Loading Screen -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#objective">Objective</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#languages">Languages</a></li>
-        </ul>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-sun" id="themeIcon"></i>
+    </div>
+
+    <!-- Navigation Dots -->
+    <nav class="navigation">
+        <div class="nav-dot active" data-section="hero"></div>
+        <div class="nav-dot" data-section="experience"></div>
+        <div class="nav-dot" data-section="skills"></div>
+        <div class="nav-dot" data-section="education"></div>
+        <div class="nav-dot" data-section="certifications"></div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Objective -->
-        <section id="objective">
-            <h2>Objective</h2>
-            <p>Dedicated and adaptable professional with a strong background in customer service, team collaboration, and high-pressure environments. Seeking a position to leverage excellent communication skills, a positive attitude, and hands-on experience in diverse roles to contribute effectively to a dynamic team.</p>
-        </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Jaden Van Der Zwaan</h1>
+            <p class="hero-subtitle">Dedicated Professional & Team Collaborator</p>
+            
+            <div class="hero-contact">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Thousand Oaks, CA</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jadenvdz@icloud.com">jadenvdz@icloud.com</a>
+                </div>
+            </div>
+            
+            <a href="#experience" class="cta-button">
+                <span>View Experience</span>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
 
-        <!-- Professional Experience -->
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <h3>Recreation Leader</h3>
-                <p>Conejo Recreation and Park District – Thousand Oaks, CA | October 2021 – Present</p>
-                <ul>
-                    <li>Coordinate setup and teardown for sports events, including basketball, softball, and soccer, ensuring smooth operations.</li>
-                    <li>Support event logistics and assist participants, demonstrating reliability and teamwork in fast-paced settings.</li>
-					<li>Prepare facilities at the Senior Center for programming and special events.</li>
-					<li>Greet visitors, direct participants, and respond to general inquiries with a focus on senior needs.</li>
-                </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Building expertise through diverse roles and meaningful contributions</p>
             </div>
-            <div class="job">
-                <h3>Front Desk Staff</h3>
-                <p>Bas Rutten’s Elite MMA – Thousand Oaks, CA | May 2022 – Present</p>
-                <ul>
-                    <li>Manage front desk operations, including processing memberships and providing exceptional customer service to gym patrons.</li>
-                    <li>Maintain a clean and organized facility, ensuring a welcoming environment for clients and staff.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Seasonal Lifeguard</h3>
-                <p>805LifeGuard – Thousand Oaks, CA | May 2021 – Present</p>
-                <ul>
-                    <li>Provide lifeguarding services for private events, ensuring guest safety through vigilant monitoring and emergency preparedness.</li>
-                    <li>Certified in CPR/AED and First Aid, maintaining a calm and professional demeanor in high-stakes situations.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Cashier/Delivery Driver</h3>
-                <p>Allegro Pizza – Thousand Oaks, CA | August 2022 – November 2022</p>
-                <ul>
-                    <li>Processed customer orders via cash register and delivered pizzas, balancing efficiency with excellent service.</li>
-                    <li>Assisted with cleaning tasks and salad preparation, contributing to overall restaurant operations.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Cashier/Kitchen Assistant</h3>
-                <p>Panda Express – Thousand Oaks, CA | October 2021 – May 2022</p>
-                <ul>
-                    <li>Operated cash register and served food, ensuring accurate transactions and customer satisfaction.</li>
-                    <li>Supported kitchen staff in preparing dishes, enhancing teamwork and workflow in a busy environment.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Cashier</h3>
-                <p>Baskin Robbins – Thousand Oaks, CA | March 2021 – October 2021</p>
-                <ul>
-                    <li>Handled cash transactions and crafted specialty desserts (milkshakes, sundaes, cakes), delivering quality service.</li>
-                    <li>Maintained a positive attitude, enhancing the customer experience in a fast-paced retail setting.</li>
-                </ul>
-            </div>
-        </section>
 
-        <!-- Education -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="item">
-                <h3>High School Diploma</h3>
-                <p>Thousand Oaks High School – Thousand Oaks, CA | Graduated: June 2023</p>
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Recreation Leader</h3>
+                            <p class="card-subtitle">Conejo Recreation and Park District • Oct 2021 – Present</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Coordinate setup and teardown for sports events, including basketball, softball, and soccer</li>
+                            <li>Support event logistics and assist participants in fast-paced settings</li>
+                            <li>Prepare facilities at the Senior Center for programming and special events</li>
+                            <li>Greet visitors and respond to inquiries with focus on senior needs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Front Desk Staff</h3>
+                            <p class="card-subtitle">Bas Rutten's Elite MMA • May 2022 – Present</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Manage front desk operations and process memberships</li>
+                            <li>Provide exceptional customer service to gym patrons</li>
+                            <li>Maintain clean and organized facility environment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Seasonal Lifeguard</h3>
+                            <p class="card-subtitle">805LifeGuard • May 2021 – Present</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Provide lifeguarding services for private events</li>
+                            <li>Ensure guest safety through vigilant monitoring</li>
+                            <li>Maintain emergency preparedness and professional demeanor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Cashier/Delivery Driver</h3>
+                            <p class="card-subtitle">Allegro Pizza • Aug 2022 – Nov 2022</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Processed customer orders and delivered pizzas efficiently</li>
+                            <li>Balanced speed with excellent customer service</li>
+                            <li>Assisted with cleaning and food preparation tasks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Cashier/Kitchen Assistant</h3>
+                            <p class="card-subtitle">Panda Express • Oct 2021 – May 2022</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Operated cash register and served food efficiently</li>
+                            <li>Ensured accurate transactions and customer satisfaction</li>
+                            <li>Enhanced teamwork and workflow in busy environment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Cashier</h3>
+                            <p class="card-subtitle">Baskin Robbins • Mar 2021 – Oct 2021</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Handled cash transactions and crafted specialty desserts</li>
+                            <li>Delivered quality service with positive attitude</li>
+                            <li>Enhanced customer experience in fast-paced retail setting</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Team Collaboration:</strong> Proven ability to work effectively with colleagues across diverse roles and settings.</li>
-                <li><strong>Communication:</strong> Strong verbal skills, adept at engaging with customers and team members.</li>
-                <li><strong>Adaptability:</strong> Thrives in fast-paced, high-pressure environments with a proactive approach.</li>
-                <li><strong>Positive Attitude:</strong> Consistently brings enthusiasm and reliability to the workplace.</li>
-            </ul>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Core Skills</h2>
+                <p class="section-subtitle">Strengths developed through diverse professional experiences</p>
+            </div>
 
-        <!-- Certifications -->
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li><strong>Lifeguard Certification with CPR/AED for Professional Rescuers and First Aid</strong> – American Red Cross, Current</li>
-            </ul>
-        </section>
+            <div class="skills-grid">
+                <div class="skill-item fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Team Collaboration</div>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        Proven ability to work effectively with colleagues across diverse roles and settings
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="95"></div>
+                    </div>
+                </div>
 
-        <!-- Languages -->
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li><strong>English:</strong> Fluent</li>
-            </ul>
-        </section>
-    </main>
+                <div class="skill-item fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Communication</div>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        Strong verbal skills, adept at engaging with customers and team members
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="90"></div>
+                    </div>
+                </div>
 
-    <!-- Footer with PDF Link -->
-    <footer>
-        <p>References available upon request | Last Updated: June 2025 | <a href="/resume.pdf" target="_blank">Download PDF</a></p>
+                <div class="skill-item fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Adaptability</div>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        Thrives in fast-paced, high-pressure environments with proactive approach
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="88"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Positive Attitude</div>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        Consistently brings enthusiasm and reliability to the workplace
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="92"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic foundation and continuous learning</p>
+            </div>
+
+            <div class="glass-container fade-in">
+                <div style="padding: 3rem;">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">High School Diploma</h3>
+                            <p class="card-subtitle">Thousand Oaks High School • Graduated June 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Certifications & Languages</h2>
+                <p class="section-subtitle">Professional qualifications and capabilities</p>
+            </div>
+
+            <div class="fade-in" style="text-align: center; margin-top: 3rem;">
+                <div class="cert-badge">
+                    <i class="fas fa-life-ring cert-icon"></i>
+                    <span><strong>Lifeguard Certification</strong> - American Red Cross (Current)</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-heartbeat cert-icon"></i>
+                    <span><strong>CPR/AED</strong> - Professional Rescuers (Current)</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-first-aid cert-icon"></i>
+                    <span><strong>First Aid</strong> - American Red Cross (Current)</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-language cert-icon"></i>
+                    <span><strong>English</strong> - Fluent</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>References available upon request • Last Updated: June 2025</p>
+                <div class="social-links">
+                    <a href="mailto:jadenvdz@icloud.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="/resume.pdf" target="_blank" class="social-link" title="Download PDF">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                © 2025 Jaden Van Der Zwaan. Crafted with passion and precision.
+            </p>
+        </div>
     </footer>
+
+    <script>
+        // Loading animation
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loadingOverlay').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Theme Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                themeIcon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            document.getElementById('themeIcon').className = 'fas fa-moon';
+        }
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observe fade-in elements
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Animate progress bars
+            const progressObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressFill = entry.target.querySelector('.progress-fill');
+                        if (progressFill) {
+                            const width = progressFill.getAttribute('data-width');
+                            setTimeout(() => {
+                                progressFill.style.width = width + '%';
+                            }, 500);
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.skill-item').forEach(el => {
+                progressObserver.observe(el);
+            });
+        });
+
+        // Navigation dots
+        const navDots = document.querySelectorAll('.nav-dot');
+        const sections = document.querySelectorAll('section[id]');
+
+        // Smooth scroll for navigation dots
+        navDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const targetSection = dot.getAttribute('data-section');
+                document.getElementById(targetSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Update active nav dot on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navDots.forEach(dot => {
+                dot.classList.remove('active');
+                if (dot.getAttribute('data-section') === current) {
+                    dot.classList.add('active');
+                }
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroSection = document.querySelector('.hero-section');
+            
+            if (heroSection) {
+                const translateY = scrolled * 0.5;
+                heroSection.style.transform = `translateY(${translateY}px)`;
+            }
+        });
+
+        // Add hover effect to cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px) rotateX(5deg)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) rotateX(0deg)';
+            });
+        });
+
+        // Add typing effect to hero title (optional enhancement)
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // Initialize typing effect after page load
+        setTimeout(() => {
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                typeWriter(heroTitle, originalText, 80);
+            }
+        }, 1500);
+    </script>
 </body>
 </html>
